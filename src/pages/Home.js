@@ -9,7 +9,7 @@ export default function Home() {
     }, [])
 
     const loadUsers = async () => {
-        const result = await axios.get('http://localhost:8080/users');
+        const result = await axios.get('https://foodprophet-backend-production.up.railway.app//users');
         setUsers(result.data);
     }
     return (
